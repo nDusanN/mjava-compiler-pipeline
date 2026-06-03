@@ -1,0 +1,9 @@
+INFO  12:36:19,494 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  12:36:19,533 - #2 program
+INFO  12:36:19,533 - #45 ABA
+INFO  12:36:19,533 - #18 {
+INFO  12:36:19,533 - #45 a
+INFO  12:36:19,534 - #24 =
+ERROR 12:36:19,534 - 
+Sintaksna greska na liniji 1
+ERROR 12:36:19,534 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 1

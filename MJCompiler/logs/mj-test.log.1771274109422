@@ -1,0 +1,8 @@
+INFO  21:32:10,405 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  21:32:10,420 - #2 program
+INFO  21:32:10,421 - #36 dusan
+INFO  21:32:10,421 - #3 {
+INFO  21:32:10,421 - #4 }
+ERROR 21:32:10,421 - 
+Sintaksna greska na liniji 1
+ERROR 21:32:10,421 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 1

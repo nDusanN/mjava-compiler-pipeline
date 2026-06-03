@@ -1,0 +1,16 @@
+INFO  15:08:12,221 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  15:08:12,231 - #2 program
+INFO  15:08:12,231 - #45 Dusan
+INFO  15:08:12,231 - #3 const
+INFO  15:08:12,232 - #45 int
+INFO  15:08:12,232 - #45 pi
+INFO  15:08:12,232 - #24 =
+INFO  15:08:12,232 - #46 3
+INFO  15:08:12,232 - #26 ;
+INFO  15:08:12,232 - #18 {
+INFO  15:08:12,232 - #5 void
+INFO  15:08:12,232 - #45 main
+INFO  15:08:12,232 - #18 {
+ERROR 15:08:12,232 - 
+Sintaksna greska na liniji 4
+ERROR 15:08:12,232 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 4

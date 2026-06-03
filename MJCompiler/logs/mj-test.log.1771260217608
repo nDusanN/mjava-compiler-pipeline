@@ -1,0 +1,17 @@
+INFO  17:43:32,277 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  17:43:32,293 - #2 program
+INFO  17:43:32,293 - #36 ja
+INFO  17:43:32,293 - #3 {
+INFO  17:43:32,293 - #4 }
+INFO  17:43:32,294 - Program(
+  ProgramName(
+   ja
+  ) [ProgramName]
+  ConVarDecList_e(
+  ) [ConVarDecList_e]
+  MethodDeclList_e(
+  ) [MethodDeclList_e]
+) [Program]
+INFO  17:43:32,294 - ===================================
+INFO  17:43:32,297 - ===================================
+INFO  17:43:32,297 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,26 @@
+INFO  12:45:20,878 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  12:45:20,899 - #2 program
+INFO  12:45:20,899 - #45 TestProgram
+INFO  12:45:20,899 - #45 int
+INFO  12:45:20,899 - #45 x
+INFO  12:45:20,899 - #26 ;
+INFO  12:45:20,900 - #45 int
+INFO  12:45:20,900 - #45 y
+INFO  12:45:20,900 - #26 ;
+INFO  12:45:20,900 - #3 const
+INFO  12:45:20,900 - #45 int
+INFO  12:45:20,900 - #45 A
+INFO  12:45:20,900 - #24 =
+INFO  12:45:20,900 - #46 5
+INFO  12:45:20,900 - #26 ;
+INFO  12:45:20,900 - #18 {
+INFO  12:45:20,901 - #5 void
+INFO  12:45:20,901 - #45 main
+INFO  12:45:20,901 - #22 (
+INFO  12:45:20,901 - #23 )
+INFO  12:45:20,901 - #18 {
+INFO  12:45:20,901 - #45 int
+INFO  12:45:20,902 - #45 a
+ERROR 12:45:20,902 - 
+Sintaksna greska na liniji 7
+ERROR 12:45:20,902 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7

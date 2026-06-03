@@ -1,0 +1,9 @@
+INFO  17:38:24,103 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  17:38:24,112 - #2 program
+INFO  17:38:24,112 - #36 ja
+INFO  17:38:24,112 - #3 {
+INFO  17:38:24,113 - #4 }
+INFO  17:38:24,113 - #36 ja
+ERROR 17:38:24,113 - 
+Sintaksna greska na liniji 5
+ERROR 17:38:24,113 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5

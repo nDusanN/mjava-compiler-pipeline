@@ -1,0 +1,5 @@
+INFO  16:27:23,337 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  16:27:23,366 - #36 Test301
+ERROR 16:27:23,366 - 
+Sintaksna greska na liniji 1
+ERROR 16:27:23,366 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 1

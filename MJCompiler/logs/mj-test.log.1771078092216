@@ -1,0 +1,38 @@
+INFO  15:07:55,892 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  15:07:55,902 - #2 program
+INFO  15:07:55,902 - #45 Dusan
+INFO  15:07:55,902 - #3 const
+INFO  15:07:55,903 - #45 int
+INFO  15:07:55,903 - #45 pi
+INFO  15:07:55,903 - #24 =
+INFO  15:07:55,903 - #46 3
+INFO  15:07:55,903 - #26 ;
+INFO  15:07:55,904 - #18 {
+INFO  15:07:55,904 - #19 }
+INFO  15:07:55,905 - Program(
+  ProgramName(
+   Dusan
+  ) [ProgramName]
+  ConVarDecList_con(
+    ConVarDecList_e(
+    ) [ConVarDecList_e]
+    ConDecList(
+      Type(
+       int
+      ) [Type]
+      ConDecl(
+       pi
+        Constant_n(
+         3
+        ) [Constant_n]
+      ) [ConDecl]
+      ConDeclMore_e(
+      ) [ConDeclMore_e]
+    ) [ConDecList]
+  ) [ConVarDecList_con]
+  MethodDeclList_e(
+  ) [MethodDeclList_e]
+) [Program]
+INFO  15:07:55,905 - ===================================
+INFO  15:07:55,907 - ===================================
+INFO  15:07:55,907 - Parsiranje uspesno zavrseno!

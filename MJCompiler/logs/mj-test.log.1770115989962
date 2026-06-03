@@ -1,0 +1,14 @@
+INFO  11:51:38,169 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  11:51:38,180 - #2 program
+INFO  11:51:38,180 - #45 ABA
+INFO  11:51:38,180 - #18 {
+INFO  11:51:38,181 - #19 }
+INFO  11:51:38,182 - Program(
+ ABA
+  ConVarDecList_e(
+  ) [ConVarDecList_e]
+  MethodDeclList_e(
+  ) [MethodDeclList_e]
+) [Program]
+INFO  11:51:38,182 - ===================================
+INFO  11:51:38,182 - Parsiranje uspesno zavrseno!

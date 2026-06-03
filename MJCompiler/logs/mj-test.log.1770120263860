@@ -1,0 +1,80 @@
+INFO  13:02:36,109 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  13:02:36,133 - #2 program
+INFO  13:02:36,133 - #45 Test123
+INFO  13:02:36,133 - #18 {
+INFO  13:02:36,133 - #5 void
+INFO  13:02:36,133 - #45 main
+INFO  13:02:36,133 - #22 (
+INFO  13:02:36,133 - #23 )
+INFO  13:02:36,133 - #45 int
+INFO  13:02:36,134 - #45 y
+INFO  13:02:36,134 - #26 ;
+INFO  13:02:36,134 - #18 {
+INFO  13:02:36,134 - #45 y
+INFO  13:02:36,134 - #24 =
+INFO  13:02:36,135 - #46 2
+INFO  13:02:36,135 - #26 ;
+INFO  13:02:36,135 - #19 }
+INFO  13:02:36,135 - #19 }
+INFO  13:02:36,137 - Program(
+ Test123
+  ConVarDecList_e(
+  ) [ConVarDecList_e]
+  MethodDeclList_rec(
+    MethodDeclList_e(
+    ) [MethodDeclList_e]
+    MethodDecl(
+      MethRetAndName_void(
+       main
+      ) [MethRetAndName_void]
+      FormPars_e(
+      ) [FormPars_e]
+      VarDeclListRec_rec(
+        VarDeclListRec_e(
+        ) [VarDeclListRec_e]
+        VarDeclList(
+          Type(
+           int
+          ) [Type]
+          VarDecl_var(
+           y
+          ) [VarDecl_var]
+          VarDeclMore_e(
+          ) [VarDeclMore_e]
+        ) [VarDeclList]
+      ) [VarDeclListRec_rec]
+      StatementList_rec(
+        StatementList_e(
+        ) [StatementList_e]
+        Statement_ss(
+          SingleStatement_ds(
+            DesignatorStatement_assign(
+              Designator_i(
+               y
+              ) [Designator_i]
+              Assignop(
+              ) [Assignop]
+              Expr_nont(
+                AddopTermList_term(
+                  Term(
+                    MulopFactorList_factor(
+                      Factor(
+                        Unary_e(
+                        ) [Unary_e]
+                        Factor_num(
+                         2
+                        ) [Factor_num]
+                      ) [Factor]
+                    ) [MulopFactorList_factor]
+                  ) [Term]
+                ) [AddopTermList_term]
+              ) [Expr_nont]
+            ) [DesignatorStatement_assign]
+          ) [SingleStatement_ds]
+        ) [Statement_ss]
+      ) [StatementList_rec]
+    ) [MethodDecl]
+  ) [MethodDeclList_rec]
+) [Program]
+INFO  13:02:36,137 - ===================================
+INFO  13:02:36,137 - Parsiranje uspesno zavrseno!

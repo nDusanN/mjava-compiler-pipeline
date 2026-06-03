@@ -1,0 +1,95 @@
+INFO  17:56:19,962 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  17:56:19,981 - #2 program
+INFO  17:56:19,981 - #45 Dusan
+INFO  17:56:19,981 - #3 const
+INFO  17:56:19,982 - #45 int
+INFO  17:56:19,982 - #45 pi
+INFO  17:56:19,982 - #24 =
+INFO  17:56:19,982 - #46 3
+INFO  17:56:19,982 - #25 ,
+INFO  17:56:19,982 - #45 g
+INFO  17:56:19,982 - #24 =
+INFO  17:56:19,982 - #46 11
+INFO  17:56:19,982 - #26 ;
+INFO  17:56:19,983 - #45 int
+INFO  17:56:19,983 - #45 x
+INFO  17:56:19,983 - #25 ,
+INFO  17:56:19,983 - #45 y
+INFO  17:56:19,983 - #20 [
+INFO  17:56:19,983 - #21 ]
+INFO  17:56:19,983 - #26 ;
+INFO  17:56:19,983 - #18 {
+INFO  17:56:19,983 - #5 void
+INFO  17:56:19,984 - #45 main
+INFO  17:56:19,984 - #22 (
+INFO  17:56:19,984 - #23 )
+INFO  17:56:19,984 - #18 {
+INFO  17:56:19,985 - #19 }
+INFO  17:56:19,986 - #19 }
+INFO  17:56:19,988 - Program(
+  ProgramName(
+   Dusan
+  ) [ProgramName]
+  ConVarDecList_var(
+    ConVarDecList_con(
+      ConVarDecList_e(
+      ) [ConVarDecList_e]
+      ConDecList(
+        Type(
+         int
+        ) [Type]
+        ConDecl(
+         pi
+          Constant_n(
+           3
+          ) [Constant_n]
+        ) [ConDecl]
+        ConDeclMore_comma(
+          ConDecl(
+           g
+            Constant_n(
+             11
+            ) [Constant_n]
+          ) [ConDecl]
+          ConDeclMore_e(
+          ) [ConDeclMore_e]
+        ) [ConDeclMore_comma]
+      ) [ConDecList]
+    ) [ConVarDecList_con]
+    VarDeclList(
+      Type(
+       int
+      ) [Type]
+      VarDecl_var(
+       x
+      ) [VarDecl_var]
+      VarDeclMore_comma(
+        VarDecl_array(
+         y
+        ) [VarDecl_array]
+        VarDeclMore_e(
+        ) [VarDeclMore_e]
+      ) [VarDeclMore_comma]
+    ) [VarDeclList]
+  ) [ConVarDecList_var]
+  MethodDeclList_rec(
+    MethodDeclList_e(
+    ) [MethodDeclList_e]
+    MethodDecl(
+      MethRetAndName_void(
+        MethodName(
+         main
+        ) [MethodName]
+      ) [MethRetAndName_void]
+      FormPars_e(
+      ) [FormPars_e]
+      VarDeclListRec_e(
+      ) [VarDeclListRec_e]
+      StatementList_e(
+      ) [StatementList_e]
+    ) [MethodDecl]
+  ) [MethodDeclList_rec]
+) [Program]
+INFO  17:56:19,988 - ===================================
+INFO  17:56:19,991 - ===================================
+INFO  17:56:19,991 - Parsiranje uspesno zavrseno!

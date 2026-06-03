@@ -1,0 +1,253 @@
+INFO  22:21:19,245 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  22:21:19,263 - #2 program
+INFO  22:21:19,263 - #36 test301
+INFO  22:21:19,263 - #26 enum
+INFO  22:21:19,264 - #36 Broj
+INFO  22:21:19,264 - #3 {
+INFO  22:21:19,264 - #36 NULA
+INFO  22:21:19,264 - #8 ,
+INFO  22:21:19,264 - #36 JEDAN
+INFO  22:21:19,264 - #8 ,
+INFO  22:21:19,264 - #36 PET
+INFO  22:21:19,265 - #7 =
+INFO  22:21:19,265 - #37 5
+INFO  22:21:19,265 - #8 ,
+INFO  22:21:19,265 - #36 DESET
+INFO  22:21:19,265 - #7 =
+INFO  22:21:19,265 - #37 10
+INFO  22:21:19,265 - #4 }
+INFO  22:21:19,265 - #5 const
+INFO  22:21:19,265 - #36 int
+INFO  22:21:19,265 - #36 nula
+INFO  22:21:19,265 - #7 =
+INFO  22:21:19,265 - #37 0
+INFO  22:21:19,265 - #6 ;
+INFO  22:21:19,266 - #5 const
+INFO  22:21:19,266 - #36 int
+INFO  22:21:19,266 - #36 jedan
+INFO  22:21:19,266 - #7 =
+INFO  22:21:19,266 - #37 1
+INFO  22:21:19,266 - #6 ;
+INFO  22:21:19,266 - #5 const
+INFO  22:21:19,266 - #36 int
+INFO  22:21:19,266 - #36 pet
+INFO  22:21:19,266 - #7 =
+INFO  22:21:19,266 - #37 5
+INFO  22:21:19,266 - #6 ;
+INFO  22:21:19,266 - #36 int
+INFO  22:21:19,266 - #36 niz
+INFO  22:21:19,266 - #9 [
+INFO  22:21:19,266 - #10 ]
+INFO  22:21:19,267 - #6 ;
+INFO  22:21:19,267 - #36 char
+INFO  22:21:19,267 - #36 nizch
+INFO  22:21:19,267 - #9 [
+INFO  22:21:19,267 - #10 ]
+INFO  22:21:19,267 - #6 ;
+INFO  22:21:19,267 - #36 int
+INFO  22:21:19,267 - #36 a
+INFO  22:21:19,267 - #6 ;
+INFO  22:21:19,267 - #3 {
+INFO  22:21:19,267 - #11 void
+INFO  22:21:19,267 - #36 main
+INFO  22:21:19,267 - #12 (
+INFO  22:21:19,267 - #13 )
+INFO  22:21:19,267 - #36 int
+INFO  22:21:19,268 - #36 bodovi
+INFO  22:21:19,268 - #6 ;
+INFO  22:21:19,268 - #36 int
+INFO  22:21:19,268 - #36 temp
+INFO  22:21:19,268 - #6 ;
+INFO  22:21:19,268 - #36 Broj
+INFO  22:21:19,268 - #36 nula
+INFO  22:21:19,268 - #8 ,
+INFO  22:21:19,268 - #36 jedan
+INFO  22:21:19,268 - #6 ;
+INFO  22:21:19,268 - #36 bool
+INFO  22:21:19,268 - #36 bt
+INFO  22:21:19,268 - #6 ;
+INFO  22:21:19,268 - #3 {
+INFO  22:21:19,268 - #4 }
+INFO  22:21:19,268 - #4 }
+INFO  22:21:19,270 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  ConVarDecList_var(
+    ConVarDecList_var(
+      ConVarDecList_var(
+        ConVarDecList_con(
+          ConVarDecList_con(
+            ConVarDecList_con(
+              ConVarDecList_enum(
+                ConVarDecList_e(
+                ) [ConVarDecList_e]
+                EnumDecList(
+                  EnumName(
+                   Broj
+                  ) [EnumName]
+                  EnumDecl_id(
+                   NULA
+                  ) [EnumDecl_id]
+                  EnumDeclMore_comma(
+                    EnumDecl_id(
+                     JEDAN
+                    ) [EnumDecl_id]
+                    EnumDeclMore_comma(
+                      EnumDecl_as(
+                       PET
+                       5
+                      ) [EnumDecl_as]
+                      EnumDeclMore_comma(
+                        EnumDecl_as(
+                         DESET
+                         10
+                        ) [EnumDecl_as]
+                        EnumDeclMore_e(
+                        ) [EnumDeclMore_e]
+                      ) [EnumDeclMore_comma]
+                    ) [EnumDeclMore_comma]
+                  ) [EnumDeclMore_comma]
+                ) [EnumDecList]
+              ) [ConVarDecList_enum]
+              ConDecList(
+                Type(
+                 int
+                ) [Type]
+                ConDecl(
+                 nula
+                  Constant_n(
+                   0
+                  ) [Constant_n]
+                ) [ConDecl]
+                ConDeclMore_e(
+                ) [ConDeclMore_e]
+              ) [ConDecList]
+            ) [ConVarDecList_con]
+            ConDecList(
+              Type(
+               int
+              ) [Type]
+              ConDecl(
+               jedan
+                Constant_n(
+                 1
+                ) [Constant_n]
+              ) [ConDecl]
+              ConDeclMore_e(
+              ) [ConDeclMore_e]
+            ) [ConDecList]
+          ) [ConVarDecList_con]
+          ConDecList(
+            Type(
+             int
+            ) [Type]
+            ConDecl(
+             pet
+              Constant_n(
+               5
+              ) [Constant_n]
+            ) [ConDecl]
+            ConDeclMore_e(
+            ) [ConDeclMore_e]
+          ) [ConDecList]
+        ) [ConVarDecList_con]
+        VarDeclList(
+          Type(
+           int
+          ) [Type]
+          VarDecl_array(
+           niz
+          ) [VarDecl_array]
+          VarDeclMore_e(
+          ) [VarDeclMore_e]
+        ) [VarDeclList]
+      ) [ConVarDecList_var]
+      VarDeclList(
+        Type(
+         char
+        ) [Type]
+        VarDecl_array(
+         nizch
+        ) [VarDecl_array]
+        VarDeclMore_e(
+        ) [VarDeclMore_e]
+      ) [VarDeclList]
+    ) [ConVarDecList_var]
+    VarDeclList(
+      Type(
+       int
+      ) [Type]
+      VarDecl_var(
+       a
+      ) [VarDecl_var]
+      VarDeclMore_e(
+      ) [VarDeclMore_e]
+    ) [VarDeclList]
+  ) [ConVarDecList_var]
+  MethodDecl(
+    MethodName(
+     main
+    ) [MethodName]
+    VarDeclListRec_rec(
+      VarDeclListRec_rec(
+        VarDeclListRec_rec(
+          VarDeclListRec_rec(
+            VarDeclListRec_e(
+            ) [VarDeclListRec_e]
+            VarDeclList(
+              Type(
+               int
+              ) [Type]
+              VarDecl_var(
+               bodovi
+              ) [VarDecl_var]
+              VarDeclMore_e(
+              ) [VarDeclMore_e]
+            ) [VarDeclList]
+          ) [VarDeclListRec_rec]
+          VarDeclList(
+            Type(
+             int
+            ) [Type]
+            VarDecl_var(
+             temp
+            ) [VarDecl_var]
+            VarDeclMore_e(
+            ) [VarDeclMore_e]
+          ) [VarDeclList]
+        ) [VarDeclListRec_rec]
+        VarDeclList(
+          Type(
+           Broj
+          ) [Type]
+          VarDecl_var(
+           nula
+          ) [VarDecl_var]
+          VarDeclMore_comma(
+            VarDecl_var(
+             jedan
+            ) [VarDecl_var]
+            VarDeclMore_e(
+            ) [VarDeclMore_e]
+          ) [VarDeclMore_comma]
+        ) [VarDeclList]
+      ) [VarDeclListRec_rec]
+      VarDeclList(
+        Type(
+         bool
+        ) [Type]
+        VarDecl_var(
+         bt
+        ) [VarDecl_var]
+        VarDeclMore_e(
+        ) [VarDeclMore_e]
+      ) [VarDeclList]
+    ) [VarDeclListRec_rec]
+    StatementList_e(
+    ) [StatementList_e]
+  ) [MethodDecl]
+) [Program]
+INFO  22:21:19,270 - ===================================
+INFO  22:21:19,272 - ===================================
+INFO  22:21:19,272 - Parsiranje uspesno zavrseno!

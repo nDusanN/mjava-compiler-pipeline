@@ -1,0 +1,60 @@
+INFO  16:40:06,049 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  16:40:06,070 - #2 program
+INFO  16:40:06,070 - #45 Dusan
+INFO  16:40:06,070 - #3 const
+INFO  16:40:06,071 - #45 pet
+INFO  16:40:06,071 - #45 pi
+INFO  16:40:06,071 - #24 =
+INFO  16:40:06,071 - #46 3
+INFO  16:40:06,071 - #26 ;
+INFO  16:40:06,071 - #18 {
+INFO  16:40:06,072 - #5 void
+INFO  16:40:06,072 - #45 main
+INFO  16:40:06,072 - #22 (
+INFO  16:40:06,073 - #23 )
+INFO  16:40:06,073 - #18 {
+INFO  16:40:06,073 - #19 }
+INFO  16:40:06,073 - #19 }
+INFO  16:40:06,075 - Program(
+  ProgramName(
+   Dusan
+  ) [ProgramName]
+  ConVarDecList_con(
+    ConVarDecList_e(
+    ) [ConVarDecList_e]
+    ConDecList(
+      Type(
+       pet
+      ) [Type]
+      ConDecl(
+       pi
+        Constant_n(
+         3
+        ) [Constant_n]
+      ) [ConDecl]
+      ConDeclMore_e(
+      ) [ConDeclMore_e]
+    ) [ConDecList]
+  ) [ConVarDecList_con]
+  MethodDeclList_rec(
+    MethodDeclList_e(
+    ) [MethodDeclList_e]
+    MethodDecl(
+      MethRetAndName_void(
+        MethodName(
+         main
+        ) [MethodName]
+      ) [MethRetAndName_void]
+      FormPars_e(
+      ) [FormPars_e]
+      VarDeclListRec_e(
+      ) [VarDeclListRec_e]
+      StatementList_e(
+      ) [StatementList_e]
+    ) [MethodDecl]
+  ) [MethodDeclList_rec]
+) [Program]
+INFO  16:40:06,075 - ===================================
+ERROR 16:40:06,077 - Nepostojeci tip podatka: pet na liniji 2
+INFO  16:40:06,077 - ===================================
+ERROR 16:40:06,078 - Parsiranje NIJE uspesno zavrseno!

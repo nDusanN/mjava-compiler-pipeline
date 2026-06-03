@@ -1,0 +1,71 @@
+INFO  17:10:25,341 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  17:10:25,356 - #2 program
+INFO  17:10:25,356 - #45 Dusan
+INFO  17:10:25,356 - #3 const
+INFO  17:10:25,357 - #45 int
+INFO  17:10:25,357 - #45 pi
+INFO  17:10:25,357 - #24 =
+INFO  17:10:25,357 - #46 3
+INFO  17:10:25,357 - #25 ,
+INFO  17:10:25,357 - #45 g
+INFO  17:10:25,358 - #24 =
+INFO  17:10:25,358 - #46 11
+INFO  17:10:25,358 - #26 ;
+INFO  17:10:25,358 - #18 {
+INFO  17:10:25,358 - #5 void
+INFO  17:10:25,358 - #45 main
+INFO  17:10:25,358 - #22 (
+INFO  17:10:25,358 - #23 )
+INFO  17:10:25,359 - #18 {
+INFO  17:10:25,359 - #19 }
+INFO  17:10:25,359 - #19 }
+INFO  17:10:25,360 - Program(
+  ProgramName(
+   Dusan
+  ) [ProgramName]
+  ConVarDecList_con(
+    ConVarDecList_e(
+    ) [ConVarDecList_e]
+    ConDecList(
+      Type(
+       int
+      ) [Type]
+      ConDecl(
+       pi
+        Constant_n(
+         3
+        ) [Constant_n]
+      ) [ConDecl]
+      ConDeclMore_comma(
+        ConDecl(
+         g
+          Constant_n(
+           11
+          ) [Constant_n]
+        ) [ConDecl]
+        ConDeclMore_e(
+        ) [ConDeclMore_e]
+      ) [ConDeclMore_comma]
+    ) [ConDecList]
+  ) [ConVarDecList_con]
+  MethodDeclList_rec(
+    MethodDeclList_e(
+    ) [MethodDeclList_e]
+    MethodDecl(
+      MethRetAndName_void(
+        MethodName(
+         main
+        ) [MethodName]
+      ) [MethRetAndName_void]
+      FormPars_e(
+      ) [FormPars_e]
+      VarDeclListRec_e(
+      ) [VarDeclListRec_e]
+      StatementList_e(
+      ) [StatementList_e]
+    ) [MethodDecl]
+  ) [MethodDeclList_rec]
+) [Program]
+INFO  17:10:25,360 - ===================================
+INFO  17:10:25,362 - ===================================
+INFO  17:10:25,362 - Parsiranje uspesno zavrseno!

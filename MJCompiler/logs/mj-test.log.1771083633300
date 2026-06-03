@@ -1,0 +1,60 @@
+INFO  16:40:21,857 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  16:40:21,875 - #2 program
+INFO  16:40:21,875 - #45 Dusan
+INFO  16:40:21,875 - #3 const
+INFO  16:40:21,875 - #45 Dusan
+INFO  16:40:21,875 - #45 pi
+INFO  16:40:21,875 - #24 =
+INFO  16:40:21,875 - #46 3
+INFO  16:40:21,875 - #26 ;
+INFO  16:40:21,876 - #18 {
+INFO  16:40:21,876 - #5 void
+INFO  16:40:21,876 - #45 main
+INFO  16:40:21,876 - #22 (
+INFO  16:40:21,877 - #23 )
+INFO  16:40:21,878 - #18 {
+INFO  16:40:21,878 - #19 }
+INFO  16:40:21,878 - #19 }
+INFO  16:40:21,879 - Program(
+  ProgramName(
+   Dusan
+  ) [ProgramName]
+  ConVarDecList_con(
+    ConVarDecList_e(
+    ) [ConVarDecList_e]
+    ConDecList(
+      Type(
+       Dusan
+      ) [Type]
+      ConDecl(
+       pi
+        Constant_n(
+         3
+        ) [Constant_n]
+      ) [ConDecl]
+      ConDeclMore_e(
+      ) [ConDeclMore_e]
+    ) [ConDecList]
+  ) [ConVarDecList_con]
+  MethodDeclList_rec(
+    MethodDeclList_e(
+    ) [MethodDeclList_e]
+    MethodDecl(
+      MethRetAndName_void(
+        MethodName(
+         main
+        ) [MethodName]
+      ) [MethRetAndName_void]
+      FormPars_e(
+      ) [FormPars_e]
+      VarDeclListRec_e(
+      ) [VarDeclListRec_e]
+      StatementList_e(
+      ) [StatementList_e]
+    ) [MethodDecl]
+  ) [MethodDeclList_rec]
+) [Program]
+INFO  16:40:21,879 - ===================================
+ERROR 16:40:21,882 - Neadekvatan tip podatka: Dusan na liniji 2
+INFO  16:40:21,882 - ===================================
+ERROR 16:40:21,882 - Parsiranje NIJE uspesno zavrseno!

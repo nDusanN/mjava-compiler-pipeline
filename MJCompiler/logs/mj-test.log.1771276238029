@@ -1,0 +1,8 @@
+INFO  22:10:31,998 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  22:10:32,017 - #2 program
+INFO  22:10:32,017 - #36 test
+INFO  22:10:32,017 - #3 {
+INFO  22:10:32,018 - #36 int
+ERROR 22:10:32,018 - 
+Sintaksna greska na liniji 2
+ERROR 22:10:32,018 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 2

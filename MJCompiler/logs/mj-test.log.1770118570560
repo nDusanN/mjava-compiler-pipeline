@@ -1,0 +1,10 @@
+INFO  11:59:40,855 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  11:59:40,866 - #2 program
+INFO  11:59:40,866 - #45 ABA
+INFO  11:59:40,866 - #18 {
+INFO  11:59:40,866 - #45 bool
+INFO  11:59:40,867 - #45 mama
+INFO  11:59:40,867 - #26 ;
+ERROR 11:59:40,867 - 
+Sintaksna greska na liniji 1
+ERROR 11:59:40,867 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 1

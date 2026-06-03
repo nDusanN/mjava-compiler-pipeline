@@ -1,0 +1,34 @@
+INFO  13:19:12,231 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  13:19:12,259 - #2 program
+INFO  13:19:12,259 - #45 Prog
+INFO  13:19:12,259 - #3 const
+INFO  13:19:12,259 - #45 int
+INFO  13:19:12,259 - #45 CI
+INFO  13:19:12,259 - #24 =
+INFO  13:19:12,259 - #46 3
+INFO  13:19:12,259 - #26 ;
+INFO  13:19:12,261 - #3 const
+INFO  13:19:12,261 - #45 bool
+INFO  13:19:12,261 - #45 CB
+INFO  13:19:12,261 - #24 =
+INFO  13:19:12,261 - #47 1
+INFO  13:19:12,261 - #26 ;
+INFO  13:19:12,261 - #4 enum
+INFO  13:19:12,261 - #45 Tip
+INFO  13:19:12,261 - #18 {
+INFO  13:19:12,261 - #45 NULA
+INFO  13:19:12,261 - #25 ,
+INFO  13:19:12,261 - #45 JEDAN
+INFO  13:19:12,261 - #25 ,
+INFO  13:19:12,261 - #45 PET
+INFO  13:19:12,261 - #24 =
+INFO  13:19:12,261 - #46 5
+INFO  13:19:12,261 - #25 ,
+INFO  13:19:12,261 - #45 DESET
+INFO  13:19:12,261 - #24 =
+INFO  13:19:12,261 - #46 10
+INFO  13:19:12,261 - #19 }
+INFO  13:19:12,262 - #4 enum
+ERROR 13:19:12,262 - 
+Sintaksna greska na liniji 7
+ERROR 13:19:12,262 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7

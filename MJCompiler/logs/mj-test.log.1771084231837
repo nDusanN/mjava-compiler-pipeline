@@ -1,0 +1,72 @@
+INFO  16:50:22,961 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  16:50:22,973 - #2 program
+INFO  16:50:22,973 - #45 Dusan
+INFO  16:50:22,973 - #3 const
+INFO  16:50:22,973 - #45 int
+INFO  16:50:22,973 - #45 pi
+INFO  16:50:22,973 - #24 =
+INFO  16:50:22,973 - #46 3
+INFO  16:50:22,973 - #25 ,
+INFO  16:50:22,973 - #45 pi
+INFO  16:50:22,973 - #24 =
+INFO  16:50:22,973 - #46 33
+INFO  16:50:22,974 - #26 ;
+INFO  16:50:22,974 - #18 {
+INFO  16:50:22,974 - #5 void
+INFO  16:50:22,974 - #45 main
+INFO  16:50:22,974 - #22 (
+INFO  16:50:22,974 - #23 )
+INFO  16:50:22,975 - #18 {
+INFO  16:50:22,975 - #19 }
+INFO  16:50:22,975 - #19 }
+INFO  16:50:22,976 - Program(
+  ProgramName(
+   Dusan
+  ) [ProgramName]
+  ConVarDecList_con(
+    ConVarDecList_e(
+    ) [ConVarDecList_e]
+    ConDecList(
+      Type(
+       int
+      ) [Type]
+      ConDecl(
+       pi
+        Constant_n(
+         3
+        ) [Constant_n]
+      ) [ConDecl]
+      ConDeclMore_comma(
+        ConDecl(
+         pi
+          Constant_n(
+           33
+          ) [Constant_n]
+        ) [ConDecl]
+        ConDeclMore_e(
+        ) [ConDeclMore_e]
+      ) [ConDeclMore_comma]
+    ) [ConDecList]
+  ) [ConVarDecList_con]
+  MethodDeclList_rec(
+    MethodDeclList_e(
+    ) [MethodDeclList_e]
+    MethodDecl(
+      MethRetAndName_void(
+        MethodName(
+         main
+        ) [MethodName]
+      ) [MethRetAndName_void]
+      FormPars_e(
+      ) [FormPars_e]
+      VarDeclListRec_e(
+      ) [VarDeclListRec_e]
+      StatementList_e(
+      ) [StatementList_e]
+    ) [MethodDecl]
+  ) [MethodDeclList_rec]
+) [Program]
+INFO  16:50:22,976 - ===================================
+ERROR 16:50:22,978 - Dvostruka definicja konstante: pi na liniji 2
+INFO  16:50:22,978 - ===================================
+ERROR 16:50:22,978 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,29 @@
+INFO  14:19:54,405 - Compiling source file: /Users/korisnik/Documents/RTI/PP1/projekat/MJCompiler/test/program.mj
+INFO  14:19:54,433 - #2 program
+INFO  14:19:54,433 - #45 Prog
+INFO  14:19:54,433 - #45 int
+INFO  14:19:54,434 - #45 a
+INFO  14:19:54,434 - #26 ;
+INFO  14:19:54,434 - #18 {
+INFO  14:19:54,434 - #19 }
+INFO  14:19:54,435 - Program(
+ Prog
+  ConVarDecList_var(
+    ConVarDecList_e(
+    ) [ConVarDecList_e]
+    VarDeclList(
+      Type(
+       int
+      ) [Type]
+      VarDecl_var(
+       a
+      ) [VarDecl_var]
+      VarDeclMore_e(
+      ) [VarDeclMore_e]
+    ) [VarDeclList]
+  ) [ConVarDecList_var]
+  MethodDeclList_e(
+  ) [MethodDeclList_e]
+) [Program]
+INFO  14:19:54,435 - ===================================
+INFO  14:19:54,435 - Parsiranje uspesno zavrseno!

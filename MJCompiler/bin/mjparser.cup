@@ -1,0 +1,200 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+    boolean errorDetected = false;
+    Logger log = Logger.getLogger(getClass());
+
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+        done_parsing();
+        report_error(message, info);
+    }
+
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+        errorDetected = true;
+        StringBuilder msg = new StringBuilder(message);
+        if (info instanceof Symbol)
+            msg.append(" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+    public void report_info(String message, Object info) {
+        StringBuilder msg = new StringBuilder(message);
+        if (info instanceof Symbol)
+            msg.append(" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+:}
+
+init with {: errorDetected = false; :}
+
+scan with {:
+    Symbol s = this.getScanner().next_token();
+    if (s != null && s.value != null)
+        log.info(s.toString() + " " + s.value.toString());
+    return s;
+:}
+
+/* ================= TERMINALS ================= */
+
+terminal PROG, LBRACE, RBRACE, CONST, SEMI, ASSIGN, COMMA, LBRACKET, RBRACKET, VOID, LPAREN, RPAREN, COL;
+terminal INC, DEC, MINUS, NEW, PLUS, MUL, DIV, MOD, DOT, READ, PRINT, ENUM, LENGTH, QMARK;
+terminal EQUAL, NOTEQUAL, GRT, GRTEQ, LS, LSEQ, RETURN;
+terminal String IDENT;
+terminal Integer NUMBER, BOOL;
+terminal Character CHAR;
+
+nonterminal Program, ProgramName, ConVarDecList, MethodDecl, ConDecList, VarDeclList, EnumDecList, EnumName, ConDecl, Constant, ConDeclMore;
+nonterminal VarDecl, VarDeclMore, EnumDecl, EnumDeclMore, VarDeclListRec, StatementList, Statement, DesignatorStatement;
+nonterminal Assignop, Addop, Mulop, Unary, Relop;
+nonterminal ActParsList, ActPars, ActParsMore;
+nonterminal TernaryThen, TernaryElse;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct SimpleExpr, CondFact, Type;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorSub, Expr, AddopTermList, Term, MulopFactorList;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, DesignatorArrayName, MethodName;
+
+//Program
+
+Program ::= (Program) PROG ProgramName ConVarDecList LBRACE MethodDecl RBRACE;
+ProgramName ::= (ProgramName) IDENT;
+
+//Declarations
+
+ConVarDecList ::= (ConVarDecList_con) ConVarDecList ConDecList
+                | (ConVarDecList_var) ConVarDecList VarDeclList
+                | (ConVarDecList_enum) ConVarDecList EnumDecList
+                | (ConVarDecList_e) /* epsilon */ ;
+
+ConDecList ::= (ConDecList) CONST Type ConDecl ConDeclMore SEMI;
+ConDecl ::= (ConDecl) IDENT ASSIGN Constant;
+ConDeclMore ::= (ConDeclMore_comma) COMMA ConDecl ConDeclMore
+              | (ConDeclMore_e) /* epsilon */ ;
+
+Constant ::= (Constant_n) NUMBER
+           | (Constant_c) CHAR
+           | (Constant_b) BOOL ;
+
+VarDeclList ::= (VarDeclList) Type VarDecl VarDeclMore SEMI;
+
+VarDecl ::= (VarDecl_var) IDENT
+          | (VarDecl_array) IDENT LBRACKET RBRACKET
+          | (VarDecl_error) error:e {: parser.report_error("Oporavak od greske u deklaraciji promenljive. Linija: " + eleft, null); :} ;
+
+VarDeclMore ::= (VarDeclMore_comma) COMMA VarDecl VarDeclMore
+              | (VarDeclMore_e) /* epsilon */ ;
+
+EnumDecList ::= (EnumDecList) ENUM EnumName LBRACE EnumDecl EnumDeclMore RBRACE;
+EnumName ::= (EnumName) IDENT;
+
+EnumDecl ::= (EnumDecl_id) IDENT
+           | (EnumDecl_as) IDENT ASSIGN NUMBER ;
+
+EnumDeclMore ::= (EnumDeclMore_comma) COMMA EnumDecl EnumDeclMore
+               | (EnumDeclMore_e) /* epsilon */ ;
+
+Type ::= (Type) IDENT;
+
+//Method
+
+MethodDecl ::= (MethodDecl) VOID MethodName LPAREN RPAREN VarDeclListRec LBRACE StatementList RBRACE;
+MethodName ::= (MethodName) IDENT;
+
+VarDeclListRec ::= (VarDeclListRec_rec) VarDeclListRec VarDeclList
+                 | (VarDeclListRec_e) /* epsilon */ ;
+
+//Statements
+
+StatementList ::= (StatementList_rec) StatementList Statement
+                | (StatementList_e) /* epsilon */ ;
+
+Statement ::= (Statement_ds) DesignatorStatement SEMI
+            | (Statement_read) READ LPAREN Designator RPAREN SEMI
+            | (Statement_print1) PRINT LPAREN Expr RPAREN SEMI
+            | (Statement_print2) PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI
+            | (Statement_return) RETURN SEMI ;
+
+DesignatorStatement ::= (DesignatorStatement_assign) Designator Assignop Expr
+                      | (DesignatorStatement_metha) Designator LPAREN ActParsList RPAREN
+                      | (DesignatorStatement_meth) Designator LPAREN RPAREN
+                      | (DesignatorStatement_inc) Designator INC
+                      | (DesignatorStatement_dec) Designator DEC
+                      | (DesignatorStatement_error) error:e {: parser.report_error("Oporavak od greske u iskazu. Linija: " + eleft, null); :} ;
+
+//Act Params
+
+ActParsList ::= (ActParsList) ActPars ActParsMore;
+ActParsMore ::= (ActParsMore_comma) COMMA ActPars ActParsMore
+              | (ActParsMore_e) /* epsilon */ ;
+ActPars ::= (ActPars) Expr;
+
+//Expresions
+
+CondFact ::= (CondFact_rel) SimpleExpr Relop SimpleExpr
+           | (CondFact_single) SimpleExpr ;
+
+SimpleExpr ::= (SimpleExpr) AddopTermList;
+
+Expr ::= (Expr_simple) SimpleExpr
+       | (Expr_ternary) CondFact TernaryThen Expr TernaryElse Expr ;
+
+TernaryThen ::= (TernaryThen) QMARK;
+TernaryElse ::= (TernaryElse) COL;
+
+AddopTermList ::= (AddopTermList_add) AddopTermList Addop Term
+                | (AddopTermList_term) Term ;
+
+Term ::= (Term) MulopFactorList;
+
+MulopFactorList ::= (MulopFactorList_mul) MulopFactorList Mulop Factor
+                  | (MulopFactorList_factor) Factor ;
+
+Factor ::= (Factor) Unary FactorSub;
+
+Unary ::= (Unary_minus) MINUS
+        | (Unary_e) /* epsilon */ ;
+
+FactorSub ::= (FactorSub_des) Designator
+            | (FactorSub_n) NUMBER
+            | (FactorSub_c) CHAR
+            | (FactorSub_b) BOOL
+            | (FactorSub_new) NEW Type LBRACKET Expr RBRACKET
+            | (FactorSub_expr) LPAREN Expr RPAREN
+            | (FactorSub_metha) Designator LPAREN ActParsList RPAREN
+            | (FactorSub_meth) Designator LPAREN RPAREN ;
+
+Designator ::= (Designator_i) IDENT
+             | (Designator_d) IDENT DOT IDENT
+             | (Designator_l) IDENT DOT LENGTH
+             | (Designator_a) DesignatorArrayName LBRACKET Expr RBRACKET ;
+
+DesignatorArrayName ::= (DesignatorArrayName) IDENT;
+
+//Operations
+
+Assignop ::= (Assignop) ASSIGN;
+
+Addop ::= (Addop_plus) PLUS
+        | (Addop_minus) MINUS ;
+
+Mulop ::= (Mulop_mul) MUL
+        | (Mulop_div) DIV
+        | (Mulop_mod) MOD ;
+
+Relop ::= (Relop_eq) EQUAL
+        | (Relop_ne) NOTEQUAL
+        | (Relop_gt) GRT
+        | (Relop_ge) GRTEQ
+        | (Relop_lt) LS
+        | (Relop_le) LSEQ ;
